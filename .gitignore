@@ -1,12 +1,6 @@
 # Xcode
 #
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-
-## Build generated
-build/
-DerivedData/
-
-## Various settings
+ios/build/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -15,49 +9,60 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata/
-
-## Other
-*.moved-aside
+xcuserdata
 *.xccheckout
-*.xcscmblueprint
-
-## Obj-C/Swift specific
+*.moved-aside
+DerivedData
 *.hmap
 *.ipa
-*.dSYM.zip
-*.dSYM
+*.xcuserstate
+ios/Pods
+.DS_Store
+.clang-format
+ios/npm-debug.log
+node_modules
+npm-debug.log
+yarn-error.log
 
-# CocoaPods
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# Pods/
+# built application files
+*.apk
+*.ap_
 
-# Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
+# files for the dex VM
+*.dex
 
-Carthage/Build
+# Java class files
+*.class
 
-# fastlane
-#
-# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
-# screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
+# generated files
+android/bin/
+android/gen/
 
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots
-fastlane/test_output
+# Local configuration file (sdk path, etc)
+local.properties
 
-# Code Injection
-#
-# After new code Injection tools there's a generated folder /iOSInjectionProject
-# https://github.com/johnno1962/injectionforxcode
+# Eclipse project files
+.classpath
+.project
 
-iOSInjectionProject/
+# Android Studio
+android/.idea/
+android/gradle/
+android/gradlew
+android/gradlew.bat
+android/.gradle
+android/local.properties
+android/out
+android/build/
+android/app/build/
+android/production
+*.iml
+*.iws
+*.ipr
+*~
+*.swp
+
+# Mac
+*.DS_Store
+android/app/src/main/assets/index.android.bundle
+android/app/src/main/assets/index.android.bundle.meta

@@ -1,0 +1,21 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "allowJs": true,
+        "target": "es6",
+        "jsx": "react",
+        "experimentalDecorators": true,
+        "moduleResolution": "node",
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "baseUrl": "."
+    },
+    "include": [
+        "index.ts",
+        "src/**/*",
+    ],
+    "exclude": [
+        "node_modules",
+        "src/**/*.js",
+    ]
+}
