@@ -16,9 +16,9 @@ export default class Feature extends React.Component<CommonProps, {}> {
         this.timer = setInterval(() => {
             this.remainingTime--;
             if (this.remainingTime <= 0) {
-                navigation.navigate('app_modal');
                 clearInterval(this.timer);
                 this.timer = null;
+                navigation.navigate('app_modal');
             }
         }, 1000);
     }

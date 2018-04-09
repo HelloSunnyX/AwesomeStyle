@@ -18,9 +18,9 @@ let Feature = class Feature extends React.Component {
             this.timer = setInterval(() => {
                 this.remainingTime--;
                 if (this.remainingTime <= 0) {
-                    navigation.navigate('app_modal');
                     clearInterval(this.timer);
                     this.timer = null;
+                    navigation.navigate('app_modal');
                 }
             }, 1000);
         };
